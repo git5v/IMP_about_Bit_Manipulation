@@ -59,6 +59,7 @@ int isPowerOfTwo (int x)
 log2(n) + 1; gives only set bit in number 
 
 bitset<8>(10)  gives number in bits 1010 for 10 and likewise
+cout<< 0b0101 ; give output 5 useed to conver bit to decimal
 
 // Convert uppercase character to lowercase
 for (char ch = 'A'; ch <= 'Z'; ch++) {
