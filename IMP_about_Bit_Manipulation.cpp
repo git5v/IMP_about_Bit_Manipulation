@@ -44,6 +44,30 @@ int isPowerOfTwo (int x)
     //    4 100 & 11 3 -> 000     pow of 2    and 
     //    6 110 & 101 5 -> 100    not pow of 2	
 
-  Number of leading zeroes: builtin_clz(x)
-  Number of trailing zeroes : builtin_ctz(x)
+  Number of leading zeroes: __builtin_clz(x)
+  Number of trailing zeroes : __builtin_ctz(x)
   Number of 1-bits: __builtin_popcount(x) 
+	  
+// rightmost set bit
+	  int  x = log2(n&(-n))+1; 
+//or we can do 
+	int n = 5;
+     	int x = (~n) +1;
+        cout << log2(n&x) + 1 << endl;
+// as -n and (~n) +1 are same 
+
+log2(n) + 1; gives only set bit in number 
+
+bitset<8>(10)  gives number in bits 1010 for 10 and likewise
+
+// Convert uppercase character to lowercase
+for (char ch = 'A'; ch <= 'Z'; ch++) {
+    cout << char(ch | ' '));        // prints abcdefghijklmnopqrstuvwxyz
+}
+
+
+// Convert lowercase character to uppercase
+for (char ch = 'a'; ch <= 'z'; ch++) {
+    cout << char(ch & '_'));    // prints ABCDEFGHIJKLMNOPQRSTUVWXYZ
+}
+
